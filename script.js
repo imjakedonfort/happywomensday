@@ -1,13 +1,13 @@
 function openLetter() {
     document.getElementById("letter-text").innerHTML = 
-        "Happy Women's Day! You are strong, beautiful, and truly special. Keep shining! 💖";
+        "💖 Happy Women's Day! You are unique, strong, and full of magic. Keep shining! 🌟";
 }
 
 function showSurprise() {
     document.getElementById("surprise").style.display = "block";
 }
 
-// Function to generate floating hearts and flowers
+// Generare inimi și flori plutitoare
 function createFloatingElements() {
     const symbols = ["❤️", "🌸", "💖", "🌹"];
     for (let i = 0; i < 20; i++) {
@@ -20,4 +20,4 @@ function createFloatingElements() {
     }
 }
 
-createFloatingElements()
+createFloatingElements();
