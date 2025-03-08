@@ -13,49 +13,55 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-p {
+.intro {
     font-size: 1.2rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.letter-container {
-    width: 200px;
-    height: 150px;
-    background: #fff;
+.letter-wrapper {
+    width: 220px;
+    height: 160px;
+    background: white;
     color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
-.letter-container:hover {
-    transform: scale(1.05);
+.letter-wrapper:hover {
+    transform: scale(1.1);
 }
 
 .letter {
     font-size: 1rem;
     font-weight: bold;
+    text-align: center;
+    transition: opacity 0.5s;
 }
 
 button {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 12px 25px;
+    font-size: 1.3rem;
     background: #ff5f6d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
     background: #ff2a3c;
+    transform: scale(1.1);
 }
 
 .surprise-message {
@@ -63,21 +69,25 @@ button:hover {
     margin-top: 20px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
-    animation: fadeIn 1s;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Animații */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Floating hearts and flowers */
 @keyframes float {
-    0% { transform: translateY(0) rotate(0); }
-    100% { transform: translateY(-100vh) rotate(360deg); }
+    0% { transform: translateY(0) rotate(0); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
 }
 
+/* Inimi și flori plutitoare */
 .heart, .flower {
     position: absolute;
     bottom: 0;
@@ -87,10 +97,10 @@ button:hover {
 
 .heart {
     color: red;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .flower {
     color: pink;
-    font-size: 22px;
-}
+    font-size: 24px;
+        }
