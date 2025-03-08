@@ -11,6 +11,13 @@ body {
     overflow: hidden;
 }
 
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -34,6 +41,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
 }
 
 .letter-wrapper:hover {
@@ -57,6 +65,9 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {
@@ -103,4 +114,4 @@ button:hover {
 .flower {
     color: pink;
     font-size: 24px;
-        }
+}
